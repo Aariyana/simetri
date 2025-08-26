@@ -1,0 +1,13 @@
+run = "python3 web_app.py"
+
+[packager]
+  # install from requirements.txt
+  packages = ["flask", "requests", "beautifulsoup4", "lxml", "apscheduler", "python-telegram-bot", "google-api-python-client", "google-auth", "google-auth-oauthlib", "google-auth-httplib2"]
+
+[env]
+  # optional: you can set defaults, but better use Replit Secrets (lock icon in sidebar)
+  TELEGRAM_BOT_TOKEN = ""
+  BLOGGER_CLIENT_ID = ""
+  BLOGGER_CLIENT_SECRET = ""
+  BLOGGER_REFRESH_TOKEN = ""
+  DB_URL = "sqlite:///jobs.db"
